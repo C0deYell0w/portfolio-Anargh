@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Anargh</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta http-equiv="Cache-Control" content="max-age=2592000">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+<body>
+  <nav class="navbar fixed-top p-2 mb-2 bg-dark bg-dark text-white">
+    <div class="container-fluid d-flex m-0 p-0">
+      <button class="btn btn-secondary btn-outline-info ms-0" type="button" id="toggleButton" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navigator borderXwidth">
+          <a onclick="scrollToSection('top')">HOME</a>
+          <a onclick="scrollToSection('skilla')">SKILLS</a>
+          <a onclick="scrollToSection('projects')">PROJECTS</a>
+          <a onclick="scrollToSection('eduexp')">EDUCATION & EXPERIENCE</a>
+          <a onclick="scrollToSection('contact')">CONTACT</a>
+      </div>
+  
+      <div class="offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title ms-2" id="offcanvasExampleLabel">CONNECT</h5>
+          <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="targets-container circleBehind d-block mt-1 mb-0">
+            <ul class="mb-0">
+              <li><a onclick="scrollToSection('top')">HOME</a></li>
+              <li><a onclick="scrollToSection('skilla')">SKILLS</a></li>
+              <li><a onclick="scrollToSection('projects')">PROJECTS</a></li>
+              <li><a onclick="scrollToSection('edu')">EDUCATION</a></li>
+              <li><a onclick="scrollToSection('exp')">EXPERIENCE</a></li>
+              <li><a onclick="scrollToSection('contact')">CONTACT</a></li>
+            </ul>
+          </div>
+  
+            <div class="mt-1 ms-2">
+              <a href="Resume-Anarghdev.pdf" download="Resume-Anarghdev.pdf">
+                <button class="btn btn-outline-info px-5 fw-semibold" type="button">
+                  RESUME &nbsp;<i class="bi bi-download"></i>
+                </button>
+              </a>
+            </div>
+            <div class="phone-box ms-2 mt-4">
+              <a href="tel:9207249075" ><i class="bi bi-telephone"></a></i>&nbsp;&nbsp;&nbsp;
+              <span class="phone-number"><a href="tel:9207249075">9207249075</a></span>
+            </div>
+            <div class="container-fluid d-flex mt-4 w-100">
+              <div class="row g-3">
+                <span class="col navcontact"><a href="mailto:anargh773@gmail.com"><i class="bi bi-envelope-at-fill"></i></a></span>
+                <span class="col navcontact"><a href="https://linkedin.com/in/anargh-dev"> <i class="bi bi-linkedin"></i></a></span>
+                <span class="col navcontact"><a href="https://github.com/C0deYell0w"><i class="bi bi-github"></i></a></span>
+                <span class="col navcontact"><a href="https://api.whatsapp.com/send?phone=919207249075" target="_blank"><i class="bi bi-whatsapp"></i></a></span>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+    
+    <div class="main-body">
+      <div class="inner-body">
+        <div id="top">last updated :friday 19-jan-24</div>
+        <div class="profile-container">
+          <img src="img\banner3.jpg">
+          <div class="blur-container">
+            <div class="container d-flex p-0 mb-3" style="min-width: 95%; height: 100%;">
+              <div class="profile">
+                <img src="img\profile.jpg" alt="">
+              </div>
+              <div class="profile-content">
+                <div class="name">
+                  <div class="text-3xl flex flex-col font-bold text-highlight">
+                    <p class="message1 mb-0">Hi i'm</p>
+                    <p class="message py-0">Anarghdev Vijayan &nbsp;<span class="caret"></span></p>
+                    <div class="text-sm font-thin designation">
+                        <p class="message2">Full Stack Web Developer &nbsp; <span class="caret"></span></p>
+                    </div>
+                </div>
+                  <div class="contacticons mt-3 cols-md-5">
+                    <div class="row" >
+                      <span class="col ic1"><a href="mailto:anargh773@gmail.com" ><i class="bi bi-envelope-at-fill"></i></a></span>
+                      <span class="col ic1"><a href="https://linkedin.com/in/anargh-dev"  > <i class="bi bi-linkedin"></i></a></span>
+                      <span class="col ic1"><a href="https://github.com/C0deYell0w"  ><i class="bi bi-github"></i></a></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+              <div class="container" style="min-width: 90%;" id="skilla">
+                <label for="technologies" class="fs-4 fw-semibold my-4 headings">What I Know</label>
+                <div class="row g-3 techdiv" for="technologies">
+                  <div class="col" style="min-width: 100px; max-width: 120px;">
+                    <div class="card skillcard" style=" background-color: rgba(34, 34, 34, 0.438);">
+                      <img src="img\html5.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <div class="progress" style="height: 5px; padding: 0; margin: 0;" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar" style="width: 65%; background-color: rgb(255, 128, 0);"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col" style="min-width: 100px; max-width: 120px;">
+                    <div class="card skillcard" style=" background-color: rgba(34, 34, 34, 0.438);">
+                      <img src="img\css3.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <div class="progress" style="height: 5px; padding: 0; margin: 0;" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar" style="width: 65%;"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col" style="min-width: 100px; max-width: 120px;">
+                    <div class="card skillcard" style=" background-color: rgba(34, 34, 34, 0.438);">
+                      <img src="img\js2.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <div class="progress" style="height: 5px; padding: 0; margin: 0;" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar" style="width: 45%; background-color: rgb(255, 200, 0);"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col" style="min-width: 100px; max-width: 120px;">
+                    <div class="card skillcard" style=" background-color: rgba(34, 34, 34, 0.438);">
+                      <img src="img\bootstrap.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <div class="progress" style="height: 5px; padding: 0; margin: 0;" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar" style="width: 55%; background-color:blueviolet"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col" style="min-width: 100px; max-width: 120px;">
+                    <div class="card skillcard" style=" background-color: rgba(34, 34, 34, 0.438);">
+                      <img src="img\angular.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <div class="progress" style="height: 5px; padding: 0; margin: 0;" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar" style="width: 45%; background-color: rgb(244, 48, 48);"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col" style="min-width: 100px; max-width: 120px;">
+                    <div class="card skillcard" style=" background-color: rgba(34, 34, 34, 0.438);">
+                      <img src="img\python.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <div class="progress" style="height: 5px; padding: 0; margin: 0;" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar" style="width: 55%; background-color:cornflowerblue;"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col" style="min-width: 100px; max-width: 120px;">
+                    <div class="card skillcard" style=" background-color: rgba(34, 34, 34, 0.438);">
+                      <img src="img\django.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <div class="progress" style="height: 5px; padding: 0; margin: 0;" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar bg-success" style="width: 65%;"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col" style="min-width: 100px; max-width: 120px;">
+                    <div class="card skillcard" style=" background-color: rgba(34, 34, 34, 0.438);">
+                      <img src="img\restapi.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <div class="progress" style="height: 5px; padding: 0; margin: 0;" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar bg-danger" style="width: 45%;"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col" style="min-width: 100px; max-width: 120px;">
+                    <div class="card skillcard" style=" background-color: rgba(34, 34, 34, 0.438);">
+                      <img src="img\mysql.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <div class="progress" style="height: 5px; padding: 0; margin: 0;" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar" style="width: 45%; background-color: rgb(1, 140, 174);"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col" style="min-width: 100px; max-width: 120px;">
+                    <div class="card skillcard" style=" background-color: rgba(34, 34, 34, 0.438);">
+                      <img src="img\sqlite.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <div class="progress" style="height: 5px; padding: 0; margin: 0;" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar" style="width: 75%; background-color: rgb(1, 140, 174);"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            
+              <div class="container mb-2" style="min-width: 90%;" id="projects">
+                <label for="projects" class="fs-4 fw-semibold my-4 headings">Projects</label>
+                <div class="row row-cols-1 row-cols-md-5 g-3 headings" id="projects">
+
+                  <div class="col " style="max-height: 400px; min-width: 250px;">
+                      <div class="card h-100 border-0 bg-dark" style="border-radius: 12px;">
+                        <img src="img\Tunely.jpg" class="card-img-top" alt="...">
+                        <div class="card-body card-projects">
+                          <p class="card-title text-white">Music Streaming Platform</p>
+                          <p class="card-text lh-sm">Django, HTML, CSS, Javascript, Ajax, Google OAuth. </p>
+                          <div class="d-flex gap-3">
+                            <a href="https://github.com/C0deYell0w/Tunely.git" class="btn bg-light custon-btn"><svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                            </svg></a>
+                            <a href="https://tunely2024.pythonanywhere.com" class="btn btn-primary custon-btn">Visit Site</a>
+                          </div>    
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col" style="max-height: 400px; min-width: 250px;">
+                    <div class="card h-100 border-0 bg-dark" style="border-radius: 12px;">
+                      <img src="img\AutoAid.jpg" class="card-img-top" alt="...">
+                      <div class="card-body card-projects">
+                        <p class="card-title text-white" style="white-space: nowrap;">On-Road Vehicle Assistance</p>
+                        <p class="card-text lh-sm">Django, HTML, CSS, Javascript, Ajax, Gmail SMTP. </p>
+                        <div class="d-flex gap-3">
+                          <a href="#" class="btn bg-light custon-btn"><svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                          </svg></a>
+                          <a href="#" class="btn btn-primary custon-btn">Visit Site</a>
+                        </div>    
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col" style="max-height: 400px; min-width: 250px;">
+                      <div class="card h-100 border-0 bg-dark" style="border-radius: 12px;">
+                        <img src="img\Gadgetsstore.jpg" class="card-img-top" alt="...">
+                        <div class="card-body card-projects">
+                          <p class="card-title text-white">Gadgets Store</p>
+                          <p class="card-text lh-sm">Django, HTML, CSS, Javascript, Bootstrap, Gmail SMTP. </p>
+                          <div class="d-flex gap-3 sticky-bottom">
+                            <a href="https://github.com/C0deYell0w/Project-Gadgets-Store.git" class="btn bg-light custon-btn"><svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                            </svg></a>
+                            <a href="#" class="btn btn-primary custon-btn">Visit Site</a>
+                          </div>    
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col" style="max-height: 400px; min-width: 250px;">
+                      <div class="card h-100 border-0 bg-dark" style="border-radius: 12px;" >
+                        <img src="img\GroceryStore.jpg" class="card-img-top" alt="...">
+                        <div class="card-body card-projects">
+                          <p class="card-title text-white">Grocery Store</p>
+                          <p class="card-text lh-sm">Django, HTML, CSS, Javascript, Bootstrap, Gmail SMTP. </p>
+                          <div class="d-flex gap-3">
+                            <a href="#" class="btn bg-light custon-btn"><svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                            </svg></a>
+                            <a href="#" class="btn btn-primary custon-btn">Visit Site</a>
+                          </div>    
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container mb-2" style="min-width: 90%;" id="eduexp" >
+                <label for="experience" class="fs-4 fw-semibold my-4 headings">Education & Experience</label>
+                <div class="row row-cols-1 row-cols-md-2 g-4" id="experience">
+
+                  <div class="col" >                  
+                    <div class="card text-bg-dark mb-3 expedcard h-100 " style="border-radius: 15px;" id="edu">
+                      <div class="card-header fs-5 fw-medium">Education</div>
+                      <div class="card-body">
+                        <div class="col">                  
+                          <div class="card text-light mb-3 expcarditem" style=" background-color: #0000006f;">
+                            <div class="card-header fw-bold" style="text-decoration: none; color: white;">Degree</div>
+                            <div class="card-body py-0">
+                              <h5 class="card-title mt-1 fw-semibold">B.Sc Computer Science  2020 - 2023</h5>
+                              <p class="m-0 p-0 subdatas" style="letter-spacing: 1px;">NIMS SSM College</p>
+                              <p class="m-0 p-0 subdatas">MG University</p>
+                              <p class="m-0 p-0 subdatas mb-2"><a href="https://maps.app.goo.gl/HBwRnhDXk3GmAXvY8" style="text-decoration: none; color: rgb(0, 229, 255);"><i class="bi bi-geo-alt-fill"></i> Idukki, Rajakkad</a></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">                  
+                          <div class="card text-light mb-4 expcarditem" style=" background-color: #0000006f;">
+                            <div class="card-header fw-bold" style="text-decoration: none; color: white;">12 th</div>
+                            <div class="card-body py-0">
+                              <h5 class="card-title fw-semibold">Computer Science 2019 - 2020</h5>
+                              <p class="m-0 p-0 subdatas" style="letter-spacing: 1px;">SNDP Higher Secondary School</p>
+                              <p class="m-0 p-0 subdatas mb-2 pt-1"> <a href="https://maps.app.goo.gl/7MY1qXseFk82eXuT7" style="text-decoration: none; color: rgb(0, 229, 255);"><i class="bi bi-geo-alt-fill"></i> Idukki, Adimali </a></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">                  
+                    <div class="card text-bg-dark mb-3 expcard h-100" style="border-radius: 15px;" id="exp">
+                      <div class="card-header fs-5 fw-medium " style=" margin-top: -1px; width: 100%;">Experience</div>
+                        <div class="card-body">
+                          <div class="col">                  
+                            <div class="card text-light fw-medium mb-3 expcarditem " style=" background-color: #0000006f;">
+                              <div class="card-header fw-bold"><a href="https://www.luminartechnolab.com/" style="text-decoration: none; color: white;">Luminar Technolab.</a></div>
+                              <div class="card-body py-0">
+                                <h5 class="card-title fw-semibold">Intern - Python django Full-Stack Development</h5>
+                                <p class="m-0 p-0 subdatas" style="letter-spacing: 1px;">June 2023 - December 2023</p>
+                                  <ul class="subdatas mb-0">
+                                    <li>Expanded expertise to include HTML, CSS, JavaScript and Bootstrap.</li>
+                                    <li>Acquired proficiency in Python, Django, and Angular.</li>
+                                    <li>Acquired knowledge of REST API and Django REST Framework.</li>
+                                    <li>Independently conceptualized and successfully executed personal web development projects.</li>
+                                  </ul> 
+                                <p class="m-0 p-0 subdatas mb-2 pt-1"><a href="https://maps.app.goo.gl/1XWnZ79MKCDzaBnN6" style="text-decoration: none; color: rgb(0, 229, 255);"><i class="bi bi-geo-alt-fill"></i> Kochi, Kakkanad</a></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="container w-100 mb-5" id="contact">
+                <div class="row">
+                  <label for="experience" class="fs-4 fw-bold my-4 text-center text-uppercase">Contact</label>
+                  <div class="col-sm-6 mb-5 d-flex justify-content-center align-items-center w-100">
+                    <div class="card contactcard" style="background: #00000079;">
+                      <div class="card-body p-3">
+                        <table class="text-light w-bold ">
+                          <tr>
+                            <td>Anarghdev Vijayan</td>
+                          </tr>
+                          <tr>
+                            <td><a href="tel:+919207249075">+91 9207249075</a></td>
+                          </tr>
+                          <tr>
+                            <td><a href="mailto:anargh773@gmail.com">anargh773@gmail.com</a></td>
+                          </tr>
+                        </table>
+                        <div class="container-fluid d-flex mt-4 w-100">
+                          <div class="row g-3">
+                            <span class="col navcontact"><a href="mailto:anargh773@gmail.com"><i class="bi bi-envelope-at-fill"></i></a></span>
+                            <span class="col navcontact"><a href="https://linkedin.com/in/anargh-dev"> <i class="bi bi-linkedin"></i></a></span>
+                            <span class="col navcontact"><a href="https://github.com/C0deYell0w"><i class="bi bi-github"></i></a></span>
+                            <span class="col navcontact"><a href="https://api.whatsapp.com/send?phone=919207249075" target="_blank"><i class="bi bi-whatsapp"></i></a></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="scrollup-btn" onclick="scrollToSection('top')"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+                </svg>
+              </div>
+      </div>
+    </div>
+    
+    <script src="scroll_position.js"></script>
+    <script src="animations.js"></script>
+    <script>
+          function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        window.onscroll = function() {
+            var scrollUpBtn = document.querySelector(".scrollup-btn");
+
+            if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+                scrollUpBtn.style.display = "flex";
+            } else {
+                scrollUpBtn.style.display = "none";
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
